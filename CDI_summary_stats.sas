@@ -38,3 +38,6 @@ proc univariate data=PUBLIC.CDI noprint;
         histogram YearStart YearEnd DataValue DataValueAlt LowConfidenceLimit
                 HighConfidenceLimit LocationID;
 run;
+
+proc print data=PUBLIC.CDI;
+run;
